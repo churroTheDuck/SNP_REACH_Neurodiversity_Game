@@ -26,9 +26,12 @@ p {
 }
 
 button {
-    padding: 10px 20px;
+    padding: 20px 40px;
+    background-color: #444;
+    border-color: white;
+    border-style: solid;
     font-size: 20px;
-    color: black;
+    color: white;
     cursor: pointer;
 }
 
@@ -38,18 +41,48 @@ button {
     left: 0;
     right: 0;
     display: flex;
-    gap: 10px;
+    gap: 20px;
     padding: 10px;
     background: #222;
 }
 
 .bar {
+    position: relative;
     flex: 1;
     height: 60px;
-    background: #444;
+    background-color: #444;
+    border: solid;
+    border-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
     font-size: 20px;
+    overflow: hidden;
+}
+
+.bar-fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    z-index: 0;
+}
+
+.bar-label {
+    position: relative;
+    z-index: 1;
+}
+
+.bar-fill.social {
+    background: #4ade80;
+}
+
+.bar-fill.academic {
+    background: #60a5fa;
+}
+
+.bar-fill.mental {
+    background: #c084fc;
 }
