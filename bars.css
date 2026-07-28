@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding-bottom: 90px;
+}
+
+.bars {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background: #222;
+}
+
+.bar {
+  flex: 1;
+  height: 60px;
+  background: #444;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 14px;
+}
