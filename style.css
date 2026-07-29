@@ -82,23 +82,12 @@ button {
     top: 0;
     height: 100%;
     z-index: 0;
+    transition: width 0.4s ease, background-color 0.4s ease;
 }
 
 .bar-label {
     position: relative;
     z-index: 1;
-}
-
-.bar-fill-research {
-    background: #F4B942;
-}
-
-.bar-fill-trust {
-    background: #F4B942;
-}
-
-.bar-fill-stress {
-    background: #4FD1C5;
 }
 
 @font-face {
