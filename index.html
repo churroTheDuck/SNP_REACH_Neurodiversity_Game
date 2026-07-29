@@ -10,22 +10,41 @@
 
 <body>
   <div class="container">
-    <div class="scenario">
-      <p>You arrive early for your first team meeting.
+    <div class="screen initial-screen">
+      <div class="scenario">
+        <p>You arrive early for your first team meeting.
 
-        Most people are chatting in small groups. One seat near the front is empty, so you sit down and skim through the
-        research notes.
+          Most people are chatting in small groups. One seat near the front is empty, so you sit down and skim through the
+          research notes.
 
-        A few minutes later, another student walks in. They pause when they see you, then quietly take a seat against
-        the wall.
+          A few minutes later, another student walks in. They pause when they see you, then quietly take a seat against
+          the wall.
 
-        The meeting begins.</p>
+          The meeting begins.</p>
+      </div>
+
+      <div class="options">
+        <button data-action="research">Continue reading your notes.</button>
+        <button data-action="trust">Wave and invite them to take the empty chair beside you.</button>
+        <button data-action="energy">Ask, "Is everything okay?"</button>
+      </div>
     </div>
 
-    <div class="options">
-      <button data-action="research">Continue reading your notes.</button>
-      <button data-action="trust">Wave and invite them to take the empty chair beside you.</button>
-      <button data-action="energy">Ask, "Is everything okay?"</button>
+    <div class="screen outcome-screen hidden" id="outcome-screen">
+      <p id="outcome-text"></p>
+      <button id="continue-button" class="continue-button">Continue</button>
+    </div>
+
+    <div class="screen followup-screen hidden" id="followup-screen">
+      <p>As everyone leaves, a teammate catches up with you.
+
+"Hey... don't worry about it."
+
+"People usually leave that seat open for Avery."
+
+"Nobody tells new students. You kind of just... notice."
+
+You think back to the beginning of the meeting. Nothing had seemed unusual at the time. Now, in hindsight, the student's hesitation makes a little more sense.</p>
     </div>
 
     <div class="bars">
